@@ -9,7 +9,7 @@ import java.util.List;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties
+@ConfigurationProperties(prefix = "application")
 public class YAMLConfig {
 
     private String name;

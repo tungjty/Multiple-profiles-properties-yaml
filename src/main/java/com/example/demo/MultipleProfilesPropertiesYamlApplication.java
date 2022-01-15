@@ -15,7 +15,7 @@ public class MultipleProfilesPropertiesYamlApplication implements CommandLineRun
 	private Animal animal;
 
 	@Autowired
-	private YAMLConfig myConfig;
+	private YAMLConfig yamlConfig;
 
 	@Value("${company.name}")
 	private String company;
@@ -34,10 +34,10 @@ public class MultipleProfilesPropertiesYamlApplication implements CommandLineRun
 		System.out.println("company name : " + company);
 		System.out.println("username : " + username);
 
-		System.out.println("using environment: " + myConfig.getEnvironment());
-		System.out.println("name: " + myConfig.getName());
-		System.out.println("enabled:" + myConfig.isEnabled());
-		System.out.println("servers: " + myConfig.getServers());
+		System.out.println("using environment: " + yamlConfig.getEnvironment());
+		System.out.println("name: " + yamlConfig.getName());
+		System.out.println("enabled:" + yamlConfig.isEnabled());
+		System.out.println("servers: " + yamlConfig.getServers());
 	}
 
 }
